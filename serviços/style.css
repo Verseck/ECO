@@ -1,65 +1,60 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
- 
- body {
-   background-color: #f2f2f2;
-   font-family: "Roboto", sans-serif;
-   height: auto;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin: 0;
-   padding: 0;
-   overflow-x: hidden;
- }
- 
- .head {
-   background-color: #004c33;
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px 20px;
- }
- 
- .logoeco {
-   max-width: 100%;
-   height: auto;
- }
- 
- .menu {
-   font-size: 20px;
-   border: 0;
-   color: #f2f2f2;
-   background-color: #004c33;
-   margin-left: 20px;
-   padding: 5px 10px;
-   text-decoration: none;
- }
- 
- /* Responsivo para telas menores */
- @media screen and (max-width: 768px) {
-   .head {
-     flex-direction: column;
-     text-align: center;
-   }
- 
-   .menu {
-     margin: 10px 0;
-     font-size: 16px;
-   }
- 
-   .logoeco {
-     margin-bottom: 20px;
-   }
- }
- 
- /* O restante do seu CSS permanece o mesmo */
- 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logoeco {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu {
+  font-size: 20px;
+  border: 0;
+  color: #f2f2f2;
+  background-color: #004c33;
+  margin-left: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.head {
+  background-color: #004c33;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box; /* Garante que o padding não aumente a largura */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Responsivo para telas menores */
+@media screen and (max-width: 768px) {
+  .head {
+    flex-direction: column;
+  }
+}
+
+/* Responsivo para telas maiores */
+@media screen and (min-width: 769px) {
+  .head {
+    flex-direction: row;
+    padding: 10px 0; /* Adiciona o preenchimento nas laterais */
+  }
+}
+
  
  
  
@@ -85,6 +80,7 @@
  
  .um {
    width: 300px;
+   border-radius: 30px;
  }
  
  .vinte {
@@ -94,6 +90,7 @@
    margin-right: auto; /* Centralize horizontalmente */
    height: 400px;
    margin-top: 100px;
+   border-radius: 30px;
  }
  
  .letra {
@@ -114,14 +111,17 @@
    margin-right: auto; /* Centralize horizontalmente */
    height: 400px;
    margin-top: 100px;
+   border-radius: 30px;
  }
  
  .dois {
    width: 300px;
+   border-radius: 30px;
  }
  
  .tres {
    width: 300px;
+   border-radius: 30px;
  }
  
  .footer {

@@ -1,158 +1,247 @@
 * {
-    margin: 0;
-    padding: 0;
-  
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  height: auto;
+}
+
+.head {
+  background-color: #004c33;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logoeco {
+  width: 100%;
+  max-width: 395px;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.menu {
+  font-size: 20px;
+  border: 0;
+  color: #f2f2f2;
+  background-color: #004c33;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .head {
+    flex-direction: column;
+    align-items: center;
   }
 
-  body {
-    background-color: #f2f2f2;
-    font-family: "Roboto", sans-serif;
-    height: auto;
-  }
-
-  .head{
-    background-color: #004c33;
-    width: 100%;
- }
- 
- .logoeco{
-   width: 395px;
-   height: 131px;
-   object-fit: cover;
- }
- 
- 
- .menu{
-   font-size: 20px;
-   border: 0;
-   color: #f2f2f2;
-   background-color: #004c33;
-   margin-left: 80px;
-   background-color: #004c33; transition: 0.5s; opacity: 0.9;
- }
-
- .serviços{
-    font-size: 70px;
-    text-align: center;
-    color: #004c33;
+  nav {
     margin-top: 20px;
-   }
+  }
 
-.lixoes{
-    background-image: url(../assets/Lixão.webp);
-    width: 300px;
-    height: 200px;
-    margin-left: 300px;
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+} 
+
+
+.menu {
+  font-size: 20px;
+  border: 0;
+  color: #f2f2f2;
+  background-color: #004c33;
+  padding: 5px 10px;
+  text-decoration: none;
 }
 
-.texto{
-
- width: 800px;
- height: 200px;
-
-
+.serviços {
+  font-size: 70px;
+  text-align: center;
+  color: #004c33;
+  margin-top: 20px;
 }
 
-.lixo{
-    margin-top: 100px;
-    margin-left: 300px;
-   
-}
-
-.aterro{
-  background-color: black;
+.teste{
+  background-image: url(../assets/Lixão.webp);
   width: 300px;
   height: 200px;
+  border-radius: 10px;
+}
+
+.aterrobg{
   background-image: url(../assets/Aterro\ controlado.webp);
-  
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.aterrosanitariobg{
+  background-image: url(../assets/aterro\ sanitario.webp);
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.Inertesbg{
+  background-image: url(../assets/Aterro\ de\ inertes.webp);
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+
+}
+
+
+
+.card{
+  background-color: white;
+  border-radius: 30px;
   
 }
 
-.footer{
-    width: 100%;
-    height: 200px;
-    background-color: #0d5313;
- }
+.lixoes,
+.aterro,
+.sanitario,
+.inertes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
 
+.texto {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
- #open-modal:hover, #open-dois:hover, #open-tres:hover, #open-quatro:hover {
+.arvr {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #0f8118;
+  color: #fff;
+  text-align: center;
+  padding: 50px 10px;
+}
+
+.left {
+  border-bottom: 1px #222424 solid;
+  border-right: 0;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.title-footer {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.title-footer span {
+  font-weight: bold;
+}
+
+.links {
+  margin-bottom: 20px;
+}
+
+.links a {
+  display: block;
+  line-height: 33px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.links a:hover {
+  color: #73a077;
+}
+
+.Copyright {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+#open-modal:hover,
+#open-dois:hover,
+#open-tres:hover,
+#open-quatro:hover {
   background-color: #004c33;
   color: #f2f2f2;
   transform: scale(1);
   transition: 1s;
   opacity: 100;
+}
 
- }
 
- .sanitario{
-  background-color: black;
-  width: 300px;
-  height: 200px;
-  background-image: url(../assets/aterro\ sanitario.webp);
-  
-
- }
-
- .inertes{
-  background-color: black;
-  width: 300px;
-  height: 200px;
-  background-image: url(../assets/Aterro\ de\ inertes.webp);
-
- }
-
- #open-modal, #open-quatro, #open-tres, #open-dois {
+#open-modal,
+#open-quatro,
+#open-tres,
+#open-dois {
+  display: block; /* Para garantir que ocupem a largura total disponível */
   border: 0;
- padding: 15px;
- border-radius: 7px;
- width: 200px;
- background-color: #FFFF;
- color: #004c33;
- margin-left: 50px;
- margin-top: 70px;
- transform: scale(0.9);
- opacity: 0;
+  padding: 15px;
+  border-radius: 7px;
+  width: 200px;
+  background-color: #ffff;
+  color: #004c33;
+  margin: 20px auto 0; /* Define a margem superior e inferior como 20px e centraliza horizontalmente */
+  transform: scale(0.9);
+  
 }
 
 #open-dois {
-  border: 0;
- padding: 15px;
- border-radius: 7px;
- width: 200px;
- background-color: #FFFF;
- color: #004c33;
- margin-left: 50px;
- margin-top: 70px;
+  margin-left: 50px;
 }
 
 #open-tres {
-  border: 0;
- padding: 15px;
- border-radius: 7px;
- width: 200px;
- background-color: #FFFF;
- color: #004c33;
- margin-left: 50px;
- margin-top: 70px;
+  margin-left: 50px;
 }
 
 #open-quatro {
-  border: 0;
- padding: 15px;
- border-radius: 7px;
- width: 200px;
- background-color: #FFFF;
- color: #004c33;
- margin-left: 50px;
- margin-top: 70px;
+  margin-left: 50px;
 }
 
 button:hover {
   opacity: 1;
 }
 
-#fade, #fadedois, #fadetres, #fadequatro {
+#fade,
+#fadedois,
+#fadetres,
+#fadequatro {
   position: fixed;
   top: 0;
   left: 0;
@@ -162,7 +251,10 @@ button:hover {
   z-index: 5;
 }
 
-#modal, #modaldois, #modaltres, #modalquatro {
+#modal,
+#modaldois,
+#modaltres,
+#modalquatro {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -177,25 +269,19 @@ button:hover {
 }
 
 #fade,
-#modal, #fadedois,
-#modaldois, #fadetres,
-#modaltres, #fadequatro,
+#modal,
+#fadedois,
+#modaldois,
+#fadetres,
+#modaltres,
+#fadequatro,
 #modalquatro {
   transition: 0.5s;
   opacity: 1;
   pointer-events: all;
 }
 
-.modal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  color: #004c33;
-}
-
+.modal-header,
 .modal-header-dois {
   display: flex;
   justify-content: space-between;
@@ -206,95 +292,41 @@ button:hover {
   color: #004c33;
 }
 
-
-
 .modal-body p {
   margin-bottom: 1rem;
 }
 
 #modal.hide,
-#fade.hide, #modaldois.hide,
-#fadedois.hide, #modaltres.hide,
-#fadetres.hide, #modalquatro.hide,
-#fadequatro.hide  {
+#fade.hide,
+#modaldois.hide,
+#fadedois.hide,
+#modaltres.hide,
+#fadetres.hide,
+#modalquatro.hide,
+#fadequatro.hide {
   opacity: 0;
   pointer-events: none;
 }
 
-#modal.hide, #modaldois.hide, #modaltres.hide, #modalquatro.hide {
+#modal.hide,
+#modaldois.hide,
+#modaltres.hide,
+#modalquatro.hide {
   top: 0;
 }
 
-#close-modal, #close-dois, #close-tres, #close-quatro {
+#close-modal,
+#close-dois,
+#close-tres,
+#close-quatro {
   border: 0;
   border-radius: 20px;
   padding: 20px;
   background-color: #004c33;
-  color: #FFFF;
+  color: #ffff;
 }
 
-.arvr{
+.arvr {
   width: 500px;
   margin-left: 120px;
 }
-
-.footer{
-  width: 100%;
-  background-color: #0f8118;
-  margin-top: 1500px;
-  height: 300px;
-	float: left;
-	font-size: 18px;
-	padding: 50px 10px 50px 10px;
-  
-}
-
-.left{ 
-	width:100%; 
-	float:left; 
-	border-bottom:1px #222424 solid;
-	border-right:0; 
-	margin-bottom:20px; 
-    padding-bottom:20px;
-}
-
-.title-footer {
-	color: #ffffff;
-	font-family: 'DM Sans', sans-serif;
-	font-weight: initial;
-    font-size:26px;
-    width:100%;
-    float:left;
-    margin-bottom:15px;
-}
-
-.title-footer span{
-	color:  #004C33;
-	font-family:'DM Sans', sans-serif;
-	font-weight: bold;
-}
-
-.links{
-	
-	width: 100%;
-	float: left;
-	margin-bottom: 20px;
-	padding: 0;
-  display: block;
-  line-height: 33px;
-  text-decoration: none;
-  color: #fff;
-  font-family:'DM Sans', sans-serif;
-  font-size:16px;
-  transition:0.2s;
-}
-
-.footer .links a:hover { color:#73a077; }
-.footer .Copyright{
-	font-family:'DM Sans', sans-serif;
-	color:  #ffff;
-	font-size: 14px;
-	font-weight: normal;
-	margin-bottom: 10px;
-}
- 

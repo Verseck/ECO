@@ -90,6 +90,22 @@ body {
 
 }
 
+.button-sobre-eco{
+  align-items: center; /* Alinhe os itens no centro verticalmente */
+  display: flex; /* Use flexbox para alinhar os itens */
+  justify-content: center; /* Alinhe os itens no centro horizontalmente */
+  max-width: 300px; /* Defina uma largura máxima para o botão */
+  width: 100%; /* Defina a largura como 100% para garantir que o botão ocupe toda a largura do contêiner pai */
+  text-align: center; /* Alinhe o conteúdo do centro horizontalmente */
+}
+
+.button-sobre-eco {
+  display: flex; /* Use flexbox para alinhar os itens */
+  justify-content: center; /* Alinhe os itens no centro horizontalmente */
+  align-items: center; /* Alinhe os itens no centro verticalmente */
+  height: 100%; /* Defina a altura como 100% */
+}
+
 .saiba:hover {
   background-color: #266d26; /* Cor de fundo ao passar o mouse */
   color: #fff; /* Cor do texto ao passar o mouse */
@@ -113,6 +129,7 @@ body {
 .sobre {
   text-align: center;
   font-size: 40px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  color: #0f8118;
 }
 
 /* Formulário de contato */
@@ -143,6 +160,42 @@ footer {
   color: #ffffff;
   font-size: 16px; /* Ajuste o tamanho da fonte para dispositivos menores */
 }
+
+/* Media queries para telas menores */
+@media screen and (max-width: 768px) {
+  .menu {
+    margin-left: 10px; /* Reduza a margem para dispositivos menores */
+  }
+  
+  .eletronica {
+    max-width: 100%; /* Faça com que os elementos ocupem toda a largura */
+  }
+  
+  .solucao {
+    font-size: 20px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  }
+  
+  .serv {
+    font-size: 16px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  }
+  
+  .saiba {
+    font-size: 16px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  }
+  
+  .sobre {
+    font-size: 30px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  }
+  
+  .fale {
+    font-size: 30px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  }
+  
+  footer {
+    font-size: 14px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  }
+}
+
 #modal {
   position: fixed;
   left: 50%;
@@ -155,6 +208,7 @@ footer {
   padding: 1.2rem;
   border-radius: 0.5rem;
   z-index: 10;
+  align-items: center;
 }
 
 .modal {
@@ -236,10 +290,7 @@ footer {
   background-color: #266d26; /* Cor de fundo ao passar o mouse */
   color: #fff; /* Cor do texto ao passar o mouse */
 }
-Essas regras de estilo definirão a cor de fundo verde e outras propriedades para o botão de fechar e também fornecerão uma mudança de cor suave quando o mouse passar sobre o botão. Certifique-se de adicionar a classe close-modal-button ao botão de fechar no seu HTML e incluir essas regras CSS no seu arquivo de estilo para obter o efeito desejado.
 
-
-
-
-
-
+.ctt{
+  color: #f2f2f2;
+}
