@@ -59,7 +59,7 @@ body {
 }
 
 /* Responsivo para telas menores */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 799px) {
   .serviços {
       font-size: 30px; /* Reduz o tamanho da fonte para telas menores */
   }
@@ -99,7 +99,7 @@ body {
 
 
 /* Responsivo para telas maiores */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 800px) {
   .head {
     flex-direction: row;
     padding: 10px 0; /* Adiciona o preenchimento nas laterais */
