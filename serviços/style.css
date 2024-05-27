@@ -47,6 +47,17 @@ body {
   color: #004c33;
 }
 
+.servicos-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 20px;
+  width: 100%; /* Define a largura total da div */
+  max-width: 800px; /* Define uma largura máxima */
+  box-sizing: border-box; /* Garante que o padding não aumente a largura */
+  overflow: hidden; /* Impede que o conteúdo ultrapasse a div */
+}
+
 /* Responsivo para telas menores */
 @media screen and (max-width: 768px) {
   .serviços {
@@ -61,15 +72,31 @@ body {
   body {
       overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
   }
+
+  .serviços {
+    font-size: 40px; /* Reduz o tamanho do texto para telas menores */
+
+    
+}
+.head {
+  flex-direction: column;
+}
+
+.servicos-container {
+  padding: 10px;
+}
+.titulo {
+  font-size: 1.5em;
+  text-align: center; /* Centraliza o texto */
+}
+.texto {
+  font-size: 0.9em;
+}
 }
 
 
-/* Responsivo para telas menores */
-@media screen and (max-width: 768px) {
-  .head {
-    flex-direction: column;
-  }
-}
+
+
 
 /* Responsivo para telas maiores */
 @media screen and (min-width: 769px) {
@@ -77,19 +104,20 @@ body {
     flex-direction: row;
     padding: 10px 0; /* Adiciona o preenchimento nas laterais */
   }
+
+  
 }
 
  
  
  
  
- .serviços {
-   font-size: 70px;
-   text-align: center;
-   color: #004c33;
-   margin-top: 30px;
-   
- }
+.serviços {
+  font-size: 70px;
+  text-align: center;
+  color: #004c33;
+  margin-top: 20px; /* Adiciona uma margem superior após o título */
+}
  
  .dv {
    background-color: #6EA4CA;
@@ -97,12 +125,12 @@ body {
  }
  
  .texto {
-   width: 800px;
-   margin-left: auto; /* Centralize horizontalmente */
-   margin-right: auto; /* Centralize horizontalmente */
-   font-size: 20px;
-   color: #004c33;
- }
+  font-size: 25px;
+  line-height: 1.5;
+  max-width: 100%; /* Define uma largura máxima para o texto */
+}
+   
+ 
  
  .um {
    width: 300px;
