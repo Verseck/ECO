@@ -1,3 +1,4 @@
+/* Adiciona um espaçamento mínimo para todo o conteúdo */
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +8,6 @@
 body {
   background-color: #f2f2f2;
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding: 0;
 }
 
 .logoeco {
@@ -40,6 +36,34 @@ body {
   text-align: center; /* Centraliza o texto */
 }
 
+.texto {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px; /* Define uma largura máxima para o texto */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+  font-size: 20px;
+  color: #004c33;
+}
+
+/* Responsivo para telas menores */
+@media screen and (max-width: 768px) {
+  .serviços {
+      font-size: 30px; /* Reduz o tamanho da fonte para telas menores */
+  }
+
+  .texto {
+      font-size: 16px; /* Reduz o tamanho da fonte para telas menores */
+      padding: 0 20px; /* Adiciona um espaçamento lateral para telas menores */
+  }
+  
+  body {
+      overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+  }
+}
+
+
 /* Responsivo para telas menores */
 @media screen and (max-width: 768px) {
   .head {
@@ -63,6 +87,8 @@ body {
    font-size: 70px;
    text-align: center;
    color: #004c33;
+   margin-top: 30px;
+   
  }
  
  .dv {
