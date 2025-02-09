@@ -19,12 +19,12 @@ body {
 
 /* Cabeçalho */
 .head {
-  background-color: #004c33;
+  background-color: #004c33; /* Cor verde já definida para o cabeçalho */
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Adicione algum espaço interno */
+  padding: 10px 20px;
 }
 
 .logoeco {
@@ -35,11 +35,11 @@ body {
 .menu {
   font-size: 20px;
   border: 0;
-  color: #f2f2f2;
-  background-color: #004c33;
-  margin-left: 20px; /* Reduza a margem para dispositivos menores */
-  padding: 5px 10px; /* Adicione algum espaço interno ao botão */
-  text-decoration: none; /* Remova a decoração do link */
+  color: #f2f2f2; /* Mantém o texto em branco */
+  background-color: #004c33; /* Mesma cor de fundo do header */
+  margin-left: 20px;
+  padding: 5px 10px;
+  text-decoration: none;
 }
 
 /* Seção principal */
