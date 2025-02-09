@@ -13,13 +13,14 @@ body {
   background-color: #f2f2f2;
   font-family: "Roboto", sans-serif;
   width: 100%;
-  margin: 0; /* Remova margens para evitar espaços em branco */
-  overflow-x: hidden; /* Evite a barra de rolagem horizontal em telas menores */
+  margin: 0;
+  overflow-x: hidden; /* Evite a barra de rolagem horizontal */
+  position: relative;
 }
 
 /* Cabeçalho */
 .head {
-  background-color: #004c33; /* Cor verde já definida para o cabeçalho */
+  background-color: #004c33;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -28,15 +29,15 @@ body {
 }
 
 .logoeco {
-  max-width: 100%; /* Faça o logotipo se ajustar ao contêiner */
-  height: auto; /* Mantenha a proporção da imagem */
+  max-width: 100%;
+  height: auto;
 }
 
 .menu {
   font-size: 20px;
   border: 0;
-  color: #f2f2f2; /* Mantém o texto em branco */
-  background-color: #004c33; /* Mesma cor de fundo do header */
+  color: #f2f2f2;
+  background-color: #004c33;
   margin-left: 20px;
   padding: 5px 10px;
   text-decoration: none;
@@ -45,76 +46,67 @@ body {
 /* Seção principal */
 .urna {
   background-color: #f2f2f2;
-  padding: 20px; /* Adicione algum espaço interno */
+  padding: 20px;
 }
 
 .solucao {
   text-align: center;
   color: #004c33;
-  font-size: 24px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  font-size: 24px;
 }
 
 .principal {
   display: flex;
-  flex-wrap: wrap; /* Faça os elementos envolverem quando não couberem na tela */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Adicione algum espaço entre os elementos */
+  gap: 20px;
 }
 
 .eletronica {
   background-color: #004C33;
   border: #0f8118 10px solid;
-  width: 100%; /* Faça com que os elementos ocupem toda a largura */
-  max-width: 300px; /* Defina uma largura máxima */
+  width: 100%;
+  max-width: 300px;
   text-align: center;
   color: #FFFF;
   margin-top: 20px;
-  padding: 20px; /* Adicione algum espaço interno */
+  padding: 20px;
 }
 
 .serv {
   color: #FFFF;
-  font-size: 18px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  font-size: 18px;
 }
 
 .saiba {
-  padding: 5px 10px; /* Adicione algum espaço interno ao botão */
-  padding: 10px 20px; /* Aumente o espaço interno para tornar o botão mais visível */
-  border-radius: 5px; /* Adicione bordas arredondadas */
-  border: none; /* Remova a borda */
-  background-color: #66bda0; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
-  font-size: 18px; /* Tamanho da fonte */
-  cursor: pointer; /* Mude o cursor para parecer um botão clicável */
-  transition: background-color 0.3s, color 0.3s; /* Adicione uma transição suave de cores */
-
-}
-
-.button-sobre-eco{
-  align-items: center; /* Alinhe os itens no centro verticalmente */
-  display: flex; /* Use flexbox para alinhar os itens */
-  justify-content: center; /* Alinhe os itens no centro horizontalmente */
-  max-width: 300px; /* Defina uma largura máxima para o botão */
-  width: 100%; /* Defina a largura como 100% para garantir que o botão ocupe toda a largura do contêiner pai */
-  text-align: center; /* Alinhe o conteúdo do centro horizontalmente */
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #66bda0;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .button-sobre-eco {
-  display: flex; /* Use flexbox para alinhar os itens */
-  justify-content: center; /* Alinhe os itens no centro horizontalmente */
-  align-items: center; /* Alinhe os itens no centro verticalmente */
-  height: 100%; /* Defina a altura como 100% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
 }
 
 .saiba:hover {
-  background-color: #266d26; /* Cor de fundo ao passar o mouse */
-  color: #fff; /* Cor do texto ao passar o mouse */
+  background-color: #266d26;
+  color: #fff;
 }
 
 .botao {
   width: 100%;
   height: 50px;
-  margin-top: 20px; /* Ajuste a margem para dispositivos menores */
+  margin-top: 20px;
 }
 
 /* Seção "Sobre Nós" */
@@ -123,12 +115,12 @@ body {
   background-color: #0f8118;
   color: #FFFF;
   text-align: center;
-  padding: 20px; /* Adicione algum espaço interno */
+  padding: 20px;
 }
 
 .sobre {
   text-align: center;
-  font-size: 40px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  font-size: 40px;
   color: #0f8118;
 }
 
@@ -136,13 +128,13 @@ body {
 .formu {
   background-color: #004c33;
   width: 100%;
-  padding: 20px; /* Adicione algum espaço interno */
+  padding: 20px;
   color: white;
 }
 
 .fale {
   text-align: center;
-  font-size: 40px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  font-size: 40px;
   color: #FFFF;
 }
 
@@ -158,44 +150,45 @@ footer {
   padding: 20px 0;
   text-align: center;
   color: #ffffff;
-  font-size: 16px; /* Ajuste o tamanho da fonte para dispositivos menores */
+  font-size: 16px;
 }
 
 /* Media queries para telas menores */
 @media screen and (max-width: 768px) {
   .menu {
-    margin-left: 10px; /* Reduza a margem para dispositivos menores */
+    margin-left: 10px;
   }
-  
+
   .eletronica {
-    max-width: 100%; /* Faça com que os elementos ocupem toda a largura */
+    max-width: 100%;
   }
-  
+
   .solucao {
-    font-size: 20px; /* Ajuste o tamanho da fonte para dispositivos menores */
+    font-size: 20px;
   }
-  
+
   .serv {
-    font-size: 16px; /* Ajuste o tamanho da fonte para dispositivos menores */
+    font-size: 16px;
   }
-  
+
   .saiba {
-    font-size: 16px; /* Ajuste o tamanho da fonte para dispositivos menores */
+    font-size: 16px;
   }
-  
+
   .sobre {
-    font-size: 30px; /* Ajuste o tamanho da fonte para dispositivos menores */
+    font-size: 30px;
   }
-  
+
   .fale {
-    font-size: 30px; /* Ajuste o tamanho da fonte para dispositivos menores */
+    font-size: 30px;
   }
-  
+
   footer {
-    font-size: 14px; /* Ajuste o tamanho da fonte para dispositivos menores */
+    font-size: 14px;
   }
 }
 
+/* Modal */
 #modal {
   position: fixed;
   left: 50%;
@@ -208,89 +201,20 @@ footer {
   padding: 1.2rem;
   border-radius: 0.5rem;
   z-index: 10;
-  align-items: center;
 }
 
 .modal {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 700px;
-  max-width: 90%;
-  background-color: #fff;
-  padding: 1.2rem;
-  border-radius: 0.5rem;
-  z-index: 10;
-  display: none; /* Esconda o modal por padrão */
+  display: none;
 }
 
 #open-modal {
-    border: 0;
-    padding: 15px;
-    border-radius: 7px;
-    width: 200px;
-    background-color: #FFFF;
-    color: #004c33;
-    margin-left: 43%;
-    cursor: pointer; /* Adicione esta linha para definir o cursor como ponteiro */
-    transition: background-color 0.3s, color 0.3s; /* Adicione esta linha para suavizar a transição */
-  }
-  
-  #open-modal:hover {
-    background-color: #004c33;
-    color: #FFFF;
-  }
-
-#open-modal:hover {
-  background-color: #004c33;
-  color: #FFFF;
-}
-
-#modal.show {
-  display: block;
-}
-
-#fade.show {
-  display: block;
-}
-
-#modal.hide {
-  display: none;
-}
-
-#fade.hide {
-  display: none;
-}
-
-.fade {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 5;
-  display: none; /* Esconda o fade por padrão */
-}
-
-.close-modal-button {
-  background-color: #004c33; /* Cor de fundo verde desejada */
-  color: #fff; /* Cor do texto branco */
-  border: none; /* Remova a borda */
-  padding: 10px 20px; /* Adicione algum espaço interno para tornar o botão visível */
-  border-radius: 5px; /* Adicione bordas arredondadas */
-  cursor: pointer; /* Mude o cursor para parecer um botão clicável */
-  transition: background-color 0.3s, color 0.3s; /* Adicione uma transição suave de cores */
-
-}
-
-.close-modal-button:hover {
-  background-color: #266d26; /* Cor de fundo ao passar o mouse */
-  color: #fff; /* Cor do texto ao passar o mouse */
-}
-
-.ctt{
-  color: #f2f2f2;
+  border: 0;
+  padding: 15px;
+  border-radius: 7px;
+  width: 200px;
+  background-color: #FFFF;
+  color: #004c33;
+  margin-left: 43%;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
