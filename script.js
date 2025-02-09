@@ -1,15 +1,23 @@
-const openModalButton = document.querySelector("#open-modal");
-const closeModalButton = document.querySelector("#close-modal");
-const modal = document.querySelector("#modal");
-const fade = document.querySelector("#fade");
+document.addEventListener('DOMContentLoaded', function() {
+  const openModalButton = document.querySelector("#open-modal");
+  const closeModalButton = document.querySelector("#close-modal");
+  const modal = document.querySelector("#modal");
+  const fade = document.querySelector("#fade");
 
-const toggleModal = () => {
-  modal.classList.toggle("show");
-  fade.classList.toggle("show");
-};
+  const toggleModal = () => {
+    modal.classList.toggle("show");
+    fade.classList.toggle("show");
+  };
 
-openModalButton.addEventListener("click", () => toggleModal());
-closeModalButton.addEventListener("click", () => toggleModal());
+  openModalButton.addEventListener("click", toggleModal);
+  closeModalButton.addEventListener("click", toggleModal);
+
+  window.addEventListener("click", (event) => {
+    if (event.target === fade) {
+      toggleModal();
+    }
+  });
+});
 
 const nono = document.querySelector("#nono");
 

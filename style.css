@@ -65,11 +65,12 @@ body {
 .eletronica {
   background-color: #004C33;
   border: #0f8118 10px solid;
-  width: 100%;
-  max-width: 300px;
+  width: 50%; /* O elemento vai ocupar metade da largura da tela */
+  max-width: 600px; /* Define um limite máximo para o tamanho */
+  min-width: 250px; /* Define um limite mínimo para o tamanho */
   text-align: center;
   color: #FFFF;
-  margin-top: 20px;
+  margin: 20px auto; /* Centraliza o elemento na tela com margem automática */
   padding: 20px;
 }
 
@@ -111,9 +112,10 @@ body {
 
 /* Seção "Sobre Nós" */
 #tudo {
-  width: 100%;
-  background-color: #0f8118;
-  color: #FFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 20px;
 }
@@ -160,7 +162,8 @@ footer {
   }
 
   .eletronica {
-    max-width: 100%;
+    width: 50%; /* Meio da tela em dispositivos móveis */
+    max-width: 100%; /* Garante que ocupe no máximo 100% da tela */
   }
 
   .solucao {
@@ -190,31 +193,103 @@ footer {
 
 /* Modal */
 #modal {
+  display: none;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
-  height: 700px;
-  max-width: 90%;
+  width: 80%; /* Reduz a largura do modal */
+  max-width: 500px; /* Reduz o limite máximo de largura */
+  max-height: 80vh; /* Define a altura máxima do modal */
   background-color: #fff;
-  padding: 1.2rem;
+  padding: 1rem; /* Reduz o padding */
   border-radius: 0.5rem;
-  z-index: 10;
+  z-index: 9999;
+  overflow: hidden;
 }
 
-.modal {
-  display: none;
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.modal-body {
+  padding: 15px; /* Reduz o padding */
+  text-align: left;
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
+  max-height: calc(80vh - 60px); /* Altura máxima do corpo do modal */
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0; /* Reduz a margem */
 }
 
 #open-modal {
   border: 0;
-  padding: 15px;
+  padding: 10px; /* Reduz o padding */
   border-radius: 7px;
-  width: 200px;
+  width: 150px; /* Reduz a largura */
   background-color: #FFFF;
   color: #004c33;
-  margin-left: 43%;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+}
+
+#open-modal:hover {
+  background-color: #004c33;
+  color: #fff;
+}
+
+.close-modal-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem; /* Reduz o tamanho da fonte */
+  cursor: pointer;
+  color: #aaa;
+}
+
+.close-modal-button:hover {
+  color: #000;
+}
+
+#fade {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+#modal.show, #fade.show {
+  display: block; /* Torna o modal e o fundo visíveis */
+}
+
+.modal.show, #fade.show {
+  display: block;
+}
+
+/* Media queries para telas menores */
+@media screen and (max-width: 768px) {
+  .modal-body {
+    padding: 10px;
+    max-height: calc(80vh - 60px); /* Altura máxima do corpo do modal */
+  }
+
+  .modal-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .close-modal-button {
+    align-self: flex-end;
+  }
 }
