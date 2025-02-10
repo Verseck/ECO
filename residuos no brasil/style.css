@@ -1,3 +1,4 @@
+/* Estilos gerais */
 * {
   margin: 0;
   padding: 0;
@@ -71,7 +72,6 @@ nav a {
   }
 } 
 
-
 .menu {
   font-size: 20px;
   border: 0;
@@ -116,8 +116,6 @@ nav a {
   border-radius: 10px;
 
 }
-
-
 
 .card{
   background-color: white;
@@ -194,44 +192,32 @@ nav a {
   margin-bottom: 10px;
 }
 
-#open-modal:hover,
-#open-dois:hover,
-#open-tres:hover,
-#open-quatro:hover {
-  background-color: #004c33;
-  color: #f2f2f2;
-  transform: scale(1);
-  transition: 1s;
-  opacity: 100;
-}
-
-
+/* Botões */
 #open-modal,
 #open-quatro,
 #open-tres,
 #open-dois {
-  display: block; /* Para garantir que ocupem a largura total disponível */
+  display: block;
   border: 0;
-  padding: 15px;
+  padding: 10px; /* Ajuste o padding */
   border-radius: 7px;
-  width: 200px;
-  background-color: #ffff;
-  color: #004c33;
-  margin: 20px auto 0; /* Define a margem superior e inferior como 20px e centraliza horizontalmente */
+  width: 150px; /* Ajuste a largura */
+  background-color: #004c33; /* Ajuste a cor de fundo */
+  color: #ffffff; /* Ajuste a cor do texto */
+  margin: 20px auto 0;
   transform: scale(0.9);
-  
+  transition: background-color 0.3s, color 0.3s;
 }
 
-#open-dois {
-  margin-left: 50px;
-}
-
-#open-tres {
-  margin-left: 50px;
-}
-
-#open-quatro {
-  margin-left: 50px;
+#open-modal:hover,
+#open-dois:hover,
+#open-tres:hover,
+#open-quatro:hover {
+  background-color: #ffffff; /* Ajuste a cor de fundo ao passar o mouse */
+  color: #004c33; /* Ajuste a cor do texto ao passar o mouse */
+  transform: scale(1);
+  transition: 1s;
+  opacity: 100;
 }
 
 button:hover {
@@ -251,6 +237,7 @@ button:hover {
   z-index: 5;
 }
 
+/* Modal */
 #modal,
 #modaldois,
 #modaltres,
@@ -259,13 +246,14 @@ button:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
-  height: 700px;
-  max-width: 90%;
+  width: 80%; /* Ajuste a largura */
+  max-width: 500px; /* Ajuste o limite máximo de largura */
+  max-height: 80vh; /* Define a altura máxima do modal */
   background-color: #fff;
-  padding: 1.2rem;
+  padding: 1rem; /* Ajuste o padding */
   border-radius: 0.5rem;
   z-index: 10;
+  overflow: hidden;
 }
 
 #fade,
@@ -292,8 +280,22 @@ button:hover {
   color: #004c33;
 }
 
+.modal-body {
+  padding: 15px; /* Ajuste o padding */
+  text-align: left;
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
+  max-height: calc(80vh - 60px); /* Altura máxima do corpo do modal */
+}
+
 .modal-body p {
   margin-bottom: 1rem;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0; /* Ajuste a margem */
 }
 
 #modal.hide,
@@ -321,12 +323,45 @@ button:hover {
 #close-quatro {
   border: 0;
   border-radius: 20px;
-  padding: 20px;
+  padding: 10px; /* Ajuste o padding */
   background-color: #004c33;
-  color: #ffff;
+  color: #ffffff;
 }
 
 .arvr {
-  width: 500px;
-  margin-left: 120px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
+
+/* Cabeçalho */
+.navbar {
+  background-color: #004c33;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.navbar-toggler {
+  background-color: #004c33;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-link {
+    margin-bottom: 10px;
+  }
+}
+
